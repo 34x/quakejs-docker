@@ -11,6 +11,16 @@
 The goal of this project was to create a fully independent quakejs server in Docker that does not require content to be served from the internet.
 Hence, once pulled, this does not need to connect to any external provider, ie. content.quakejs.com. Nor does this server need to be proxied/served/relayed from quakejs.com
 
+#### If running on the cloud with empty VM (example for debian)
+
+```
+apt-get update
+apt-get -y install git
+git clone git@github.com:34x/quakejs-docker.git quakejs
+cd quakejs
+./server-setup.sh
+```
+
 #### Simply pull the image [treyyoder/quakejs](https://hub.docker.com/r/treyyoder/quakejs)
 ```
 docker pull treyyoder/quakejs:latest
